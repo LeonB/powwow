@@ -1,0 +1,79 @@
+body {
+	color: #838383;
+}
+
+table.cake-sql-log {
+	width: 100%;
+}
+
+.users-admin_login-container,
+.users-admin_password_recover-container {
+	width: 380px; 
+	display: block;
+	margin: 60px auto 0 auto;
+	background: #f9f9f9;
+	border: 1px solid #d5d5d5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow:  0px 0px 2px #dadada, inset 0px -3px 0px #e6e6e6;
+}
+
+.users-admin_password_recover-container {
+	width: 440px; 
+}
+
+h1 {
+	margin-bottom: .4em;
+	color: #F90;
+}
+
+/** Sign in page **/
+.users-admin_login-container .content,
+.users-admin_password_recover-container .content {
+	padding: 16px 28px 23px;
+}
+
+.users-admin_login-container .field label, 
+.users-admin_password_recover-container .field label {
+	display: none;
+}
+
+input {
+	font-family: 'Open Sans';
+	font-size: 13px;
+	color: #8E8D8D;
+	padding: 11px 15px 10px 50px;
+	background-color: #FDFDFD;
+	width: 255px;
+	display: block;
+	box-shadow: inset 2px 2px 4px #f1f1f1;
+	margin-bottom: 1.25em;
+}
+
+.users-admin_login-container #UserEmail,
+.users-admin_password_recover-container #UserEmail {
+	background-image: url(../img/icons/user.png);
+	background-repeat: no-repeat;
+}
+
+.users-admin_login-container #UserPassword {
+	background-image: url(../img/icons/password.png);
+	background-repeat: no-repeat;
+}
+
+.users-admin_login-container .login-fields .field {
+	margin-bottom: 1.25em;
+}
+
+/** Password recover page **/
+
+.flash {
+}
+
+.flash .message {
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}

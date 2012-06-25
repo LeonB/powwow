@@ -1,0 +1,31 @@
+gravatar
+moderation tools
+multiple users per site
+multiple sites per user
+comments export
+layout aanpassen
+location aanpassen (onder, slide, popup)
+werkend met AJAX
+twitter bootstrap admin theme (zoek op google)
+askimet
+gebruikers kunnen pagination, threading e.d. zelf aanpassen
+realtime?
+
+LATER:
+sync wordpress/comments
+trackbacks / pingbacks
+notificaties
+
+ADMIN THEME:
+http://wrapbootstrap.com/preview/WB00U8L84
+http://wrapbootstrap.com/preview/WB00U99JJ
+
+LIBRARIES:
+http://fortawesome.github.com/Font-Awesome/
+http://twitter.github.com/bootstrap/
+
+ORMS:
+Doctrine and Propel
+
+http://nuts-and-bolts-of-cakephp.com/2008/05/28/i-want-objects-not-arrays/
+http://www.edwardawebb.com/web-development/cakephp/reset-lost-passwords-cakephp
