@@ -30,11 +30,6 @@
  * ...and connect the rest of 'Pages' controller's urls.
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
-	
-	Router::connect('/admin', array('controller' => 'dashboard', 'admin' => true));
-	
-//	App::import('Lib', 'routes/AdminRoute');
-//	Router::connect('/admin/:controller/:action/*', array(), array('routeClass' => 'AdminRoute'));
 
 /**
  * Load all plugin routes.  See the CakePlugin documentation on 
