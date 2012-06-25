@@ -7,14 +7,14 @@ App::uses('AppModel', 'Model');
  * @property User $User
  */
 class User extends AppModel {
-	
+
 /**
  * Display field
  *
  * @var string
  */
 	public $displayField = 'email';
-	
+
 /**
  * Validation rules
  *
@@ -40,7 +40,7 @@ class User extends AppModel {
 			),
 		),
 	);
-	
+
 /**
  * hasAndBelongsToMany associations
  *
@@ -63,7 +63,7 @@ class User extends AppModel {
 			'insertQuery' => ''
 		)
 	);
-	
+
     public function beforeSave($options = array()) {
     	if (isset($this->data['User']['password'])) {
     		$this->data['User']['salt'] = Security::generateAuthKey();
@@ -71,5 +71,5 @@ class User extends AppModel {
     	}
         return true;
     }
-    
+
 }
