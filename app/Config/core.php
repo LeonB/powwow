@@ -41,7 +41,7 @@
  *
  * Options:
  *
- * - `handler` - callback - The callback to handle errors. You can set this to any callable type,
+ * - `handler` - callback - The callback to handle errors. You can set this to any callback type,
  *    including anonymous functions.
  * - `level` - int - The level of errors you are interested in capturing.
  * - `trace` - boolean - Include stack traces for errors in log files.
@@ -110,7 +110,7 @@
  *	`manager_index()` and `/manager/controller/index`
  *
  */
-	//Configure::write('Routing.prefixes', array('admin'));
+	Configure::write('Routing.prefixes', array('admin'));
 
 /**
  * Turn off all caching application-wide.
@@ -133,7 +133,7 @@
  * Defines the default error type when using the log() function. Used for
  * differentiating error logging and debugging. Currently PHP supports LOG_DEBUG.
  */
-	define('LOG_ERROR', LOG_ERR);
+	define('LOG_ERROR', 2);
 
 /**
  * Session configuration.
@@ -173,7 +173,7 @@
  *
  */
 	Configure::write('Session', array(
-		'defaults' => 'php'
+		'defaults' => 'cake'
 	));
 
 /**
@@ -184,12 +184,12 @@
 /**
  * A random string used in security hashing methods.
  */
-	Configure::write('Security.salt', 'DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi');
+	Configure::write('Security.salt', 'R4U$BPep&VJfG6Vp$PKhN%Eja866C75m');
 
 /**
  * A random numeric string (digits only) used to encrypt/decrypt strings.
  */
-	Configure::write('Security.cipherSeed', '76859309657453542496749683645');
+	Configure::write('Security.cipherSeed', '27975393789489855938344494898999');
 
 /**
  * Apply timestamps with the last modified time to static assets (js, css, images).

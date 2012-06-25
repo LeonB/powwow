@@ -1,4 +1,3 @@
-/app/Config
 /app/tmp
 /lib/Cake/Console/Templates/skel/tmp/
 /plugins
@@ -15,3 +14,4 @@ empty
 *.sublime-project
 *.sublime-workspace
 sftp-config.json
+app/webroot/*.sqlite

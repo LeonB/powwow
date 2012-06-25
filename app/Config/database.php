@@ -59,15 +59,9 @@
  */
 class DATABASE_CONFIG {
 
-//	public $default = array(
-//		'datasource' => 'Database/Sqlite',
-//		'persistent' => false,
-//		'database' => 'comments.sqlite3',
-//		'prefix' => '',
-//		//'encoding' => 'utf8',
-//	);
-	
-	public $default = array(
+	public $default = null;
+
+	public $prod = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
@@ -79,13 +73,22 @@ class DATABASE_CONFIG {
 	);
 
 	public $test = array(
-		'datasource' => 'Database/Mysql',
+		'datasource' => 'Database/Sqlite',
 		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'test_database_name',
-		'prefix' => '',
-		//'encoding' => 'utf8',
+		'database' => 'comments.sqlite',
+		'encoding' => 'utf8',
 	);
+
+	public function __construct() {
+		switch ($_SERVER['SERVER_NAME']) {
+			default:
+				$this->default = $this->prod;
+				break;
+
+			case 'localhost':
+				$this->default = $this->test;
+				break;
+		}
+	}
 }
+
