@@ -80,6 +80,7 @@ class DATABASE_CONFIG {
 	);
 
 	public function __construct() {
+		return $this->default = $this->test;
 		switch ($_SERVER['SERVER_NAME']) {
 			default:
 				$this->default = $this->prod;
